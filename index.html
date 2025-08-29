@@ -16,7 +16,234 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
-<body>
+<body class="bg-[#F5FFF6]">
     
+
+<header class="mx-auto w-11/12 py-4 px-4">
+  <div class="flex flex-col md:flex-row md:justify-between md:items-center gap-4">
+    <!-- Logo -->
+    <div class="logo flex gap-3 items-center justify-center">
+      <img class="h-[40px] w-[40px]" src="assets/logo.png" alt="logo">
+      <h3 class="font-bold text-[#006747] leading-tight">
+        Emergency <br> Service
+      </h3>
+    </div>
+
+    <!-- Buttons -->
+    <div class="flex items-center justify-center gap-3 flex-wrap">
+      <button class="btn bg-[#e5f4e8] rounded-[50px] px-6 py-2 flex items-center gap-2">
+        <span class="font-bold">0</span>
+        <img class="w-[20px] h-[23px]" src="assets/heart.png" alt="">
+      </button>
+
+      <button class="btn bg-[#e5f4e8] rounded-[50px] px-5 py-2 flex items-center gap-2">
+        <span class="font-bold">100</span>
+        <img class="w-[20px] h-[23px]" src="assets/coin.png" alt="">
+      </button>
+
+      <button class="btn bg-[#00A63E] text-white rounded-[50px] px-5 py-2">
+        <span>2</span> copy
+      </button>
+    </div>
+  </div>
+</header>
+
+    <section class="banner-section bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] min-h-[240px] flex flex-col items-center justify-center text-center sm:px-6 md:px-12 lg:px-20 py-8" >
+         <!-- Logo -->
+        <img class="w-[92px] h-[92px]" src="assets/logo-dark.png" alt="">
+          <!-- Heading -->
+        <h1 class="font-bold text-[2.2rem] text-white my-3">Emergency Service Directory</h1>
+          <!-- Paragraph -->
+        <p class="text-white">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
+    </section>
+
+<section class="service-section mb-12 w-11/12 mx-auto grid grid-cols-1 lg:grid-cols-12 gap-6">
+    <div class="card-items mt-[48px] gap-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 md:grid-cols-3 lg:col-span-9">
+        <div class="crard-item bg-white shadow p-8 ">
+            <div class="card-icon flex justify-between items-center">
+                <img class="max-w-[60px] max-h-[60px] mb-3 bg-[#FFE3E2] rounded-lg p-3" src="assets/emergency.png" alt="">
+                <span class=" "><i class="fa-regular fa-heart"></i></span>
+            </div>
+            <div class="card-content">
+                <h3 class="font-bold text-[19px]">National Emergency Number</h3>
+                <p class="text-[16px]">National Emergency</p>
+                <span class="font-bold text-2xl">999</span><br>
+                <button class="btn  text-gray-400 rounded-[20px] px-5 py-2 bg-light mb-3"> All</button>
+            </div>
+            <div class="card-btn">
+                <button class="btn text-gray-400 bg-white px-10" tabindex="-1" role="button" aria-disabled="true"><span><i class="fa-regular fa-copy"></i></span>Copy</button>
+                <button class="btn text-white bg-green-600 px-10" tabindex="-1" role="button" aria-disabled="true">
+                  <span class=""><i class="fa-solid fa-phone"></i></span>Call
+                </button>
+            </div>
+        </div>
+        <div class="crard-item bg-white shadow p-8">
+            <div class="card-icon flex justify-between items-center">
+                <img class="max-w-[60px] max-h-[60px] mb-3 bg-[#FFE3E2] rounded-lg p-3" src="assets/police.png" alt="">
+                <span class=" "><i class="fa-regular fa-heart"></i></span>
+            </div>
+            <div class="card-content">
+                <h3 class="font-bold text-[19px]">Police Helpline Number</h3>
+                <p class="text-[16px]">Police</p>
+                <span class="font-bold text-2xl">999</span><br>
+                <button class="btn  text-gray-400 rounded-[20px] px-5 py-2 bg-light mb-3"> All</button>
+            </div>
+            <div class="card-btn">
+                <button class="btn text-gray-400 bg-white px-10" tabindex="-1" role="button" aria-disabled="true"><span><i class="fa-regular fa-copy"></i></span>Copy</button>
+                <button class="btn text-white bg-green-600 px-10" tabindex="-1" role="button" aria-disabled="true">
+                  <span class=""><i class="fa-solid fa-phone"></i></span>Call
+                </button>
+            </div>
+        </div>
+        <div class="crard-item bg-white shadow p-8">
+            <div class="card-icon flex justify-between items-center">
+                <img class="max-w-[60px] max-h-[60px] mb-3 bg-[#FFE3E2] rounded-lg p-3" src="assets/fire-service.png" alt="">
+                <span class=" "><i class="fa-regular fa-heart"></i></span>
+            </div>
+            <div class="card-content">
+                <h3 class="font-bold text-[19px]">Fire Service Number</h3>
+                <p class="text-[16px]">Fire Service</p>
+                <span class="font-bold text-2xl">999</span><br>
+                <button class="btn  text-gray-400 rounded-[20px] px-5 py-2 bg-light mb-3"> All</button>
+            </div>
+           <div class="card-btn">
+                <button class="btn text-gray-400 bg-white px-10" tabindex="-1" role="button" aria-disabled="true"><span><i class="fa-regular fa-copy"></i></span>Copy</button>
+                <button class="btn text-white bg-green-600 px-10" tabindex="-1" role="button" aria-disabled="true">
+                  <span class=""><i class="fa-solid fa-phone"></i></span>Call
+                </button>
+            </div>
+        </div>
+        <div class="crard-item bg-white shadow p-8">
+            <div class="card-icon flex justify-between items-center">
+                <img class="max-w-[60px] max-h-[60px] mb-3 bg-[#FFE3E2] rounded-lg p-3" src="assets/emergency.png" alt="">
+                <span class=" "><i class="fa-regular fa-heart"></i></span>
+            </div>
+            <div class="card-content">
+                <h3 class="font-bold text-[19px]">National Emergency Number</h3>
+                <p class="text-[16px]">National Emergency</p>
+                <span class="font-bold text-2xl">999</span><br>
+                <button class="btn  text-gray-400 rounded-[20px] px-5 py-2 bg-light mb-3"> All</button>
+            </div>
+           <div class="card-btn">
+                <button class="btn text-gray-400 bg-white px-10" tabindex="-1" role="button" aria-disabled="true"><span><i class="fa-regular fa-copy"></i></span>Copy</button>
+                <button class="btn text-white bg-green-600 px-10" tabindex="-1" role="button" aria-disabled="true">
+                  <span class=""><i class="fa-solid fa-phone"></i></span>Call
+                </button>
+            </div>
+        </div>
+        <div class="crard-item bg-white shadow p-8">
+            <div class="card-icon flex justify-between items-center">
+                <img class="max-w-[60px] max-h-[60px] mb-3 bg-[#FFE3E2] rounded-lg p-3" src="assets/emergency.png" alt="">
+                <span class=" "><i class="fa-regular fa-heart"></i></span>
+            </div>
+            <div class="card-content">
+                <h3 class="font-bold text-[19px]">National Emergency Number</h3>
+                <p class="text-[16px]">National Emergency</p>
+                <span class="font-bold text-2xl">999</span><br>
+                <button class="btn  text-gray-400 rounded-[20px] px-5 py-2 bg-light mb-3"> All</button>
+            </div>
+           <div class="card-btn">
+                <button class="btn text-gray-400 bg-white px-10" tabindex="-1" role="button" aria-disabled="true"><span><i class="fa-regular fa-copy"></i></span>Copy</button>
+                <button class="btn text-white bg-green-600 px-10" tabindex="-1" role="button" aria-disabled="true">
+                  <span class=""><i class="fa-solid fa-phone"></i></span>Call
+                </button>
+            </div>
+        </div>
+        <div class="crard-item bg-white shadow p-8">
+            <div class="card-icon flex justify-between items-center">
+                <img class="max-w-[60px] max-h-[60px] mb-3 bg-[#FFE3E2] rounded-lg p-3" src="assets/emergency.png" alt="">
+                <span class=" "><i class="fa-regular fa-heart"></i></span>
+            </div>
+            <div class="card-content">
+                <h3 class="font-bold text-[19px]">National Emergency Number</h3>
+                <p class="text-[16px]">National Emergency</p>
+                <span class="font-bold text-2xl">999</span><br>
+                <button class="btn  text-gray-400 rounded-[20px] px-5 py-2 bg-light mb-3"> All</button>
+            </div>
+           <div class="card-btn">
+                <button class="btn text-gray-400 bg-white px-10" tabindex="-1" role="button" aria-disabled="true"><span><i class="fa-regular fa-copy"></i></span>Copy</button>
+                <button class="btn text-white bg-green-600 px-10" tabindex="-1" role="button" aria-disabled="true">
+                  <span class=""><i class="fa-solid fa-phone"></i></span>Call
+                </button>
+            </div>
+        </div>
+        <div class="crard-item bg-white shadow p-8">
+            <div class="card-icon flex justify-between items-center">
+                <img class="max-w-[60px] max-h-[60px] mb-3 bg-[#FFE3E2] rounded-lg p-3" src="assets/emergency.png" alt="">
+                <span class=" "><i class="fa-regular fa-heart"></i></span>
+            </div>
+            <div class="card-content">
+                <h3 class="font-bold text-[19px]">National Emergency Number</h3>
+                <p class="text-[16px]">National Emergency</p>
+                <span class="font-bold text-2xl">999</span><br>
+                <button class="btn  text-gray-400 rounded-[20px] px-5 py-2 bg-light mb-3"> All</button>
+            </div>
+           <div class="card-btn">
+                <button class="btn text-gray-400 bg-white px-10" tabindex="-1" role="button" aria-disabled="true"><span><i class="fa-regular fa-copy"></i></span>Copy</button>
+                <button class="btn text-white bg-green-600 px-10" tabindex="-1" role="button" aria-disabled="true">
+                  <span class=""><i class="fa-solid fa-phone"></i></span>Call
+                </button>
+            </div>
+        </div>
+        <div class="crard-item bg-white shadow p-8">
+            <div class="card-icon flex justify-between items-center">
+                <img class="max-w-[60px] max-h-[60px] mb-3 bg-[#FFE3E2] rounded-lg p-3" src="assets/emergency.png" alt="">
+                <span class=" "><i class="fa-regular fa-heart"></i></span>
+            </div>
+            <div class="card-content">
+                <h3 class="font-bold text-[19px]">National Emergency Number</h3>
+                <p class="text-[16px]">National Emergency</p>
+                <span class="font-bold text-2xl">999</span><br>
+                <button class="btn  text-gray-400 rounded-[20px] px-5 py-2 bg-light mb-3"> All</button>
+            </div>
+           <div class="card-btn">
+                <button class="btn text-gray-400 bg-white px-10" tabindex="-1" role="button" aria-disabled="true"><span><i class="fa-regular fa-copy"></i></span>Copy</button>
+                <button class="btn text-white bg-green-600 px-10" tabindex="-1" role="button" aria-disabled="true">
+                  <span class=""><i class="fa-solid fa-phone"></i></span>Call
+                </button>
+            </div>
+        </div>
+        <div class="crard-item bg-white shadow p-8">
+            <div class="card-icon flex justify-between items-center">
+                <img class="max-w-[60px] max-h-[60px] mb-3 bg-[#FFE3E2] rounded-lg p-3" src="assets/emergency.png" alt="">
+                <span class=" "><i class="fa-regular fa-heart"></i></span>
+            </div>
+            <div class="card-content">
+                <h3 class="font-bold text-[19px]">National Emergency Number</h3>
+                <p class="text-[16px]">National Emergency</p>
+                <span class="font-bold text-2xl">999</span><br>
+                <button class="btn  text-gray-400 rounded-[20px] px-5 py-2 bg-light mb-3"> All</button>
+            </div>
+           <div class="card-btn">
+                <button class="btn text-gray-400 bg-white px-10" tabindex="-1" role="button" aria-disabled="true"><span><i class="fa-regular fa-copy"></i></span>Copy</button>
+                <button class="btn text-white bg-green-600 px-10" tabindex="-1" role="button" aria-disabled="true">
+                  <span class=""><i class="fa-solid fa-phone"></i></span>Call
+                </button>
+            </div>
+        </div>
+        
+    </div>
+    <div class="aside lg:col-span-3 mt-12">
+      <div class="crard-item bg-white shadow p-8">
+            <div class="card-icon flex justify-between items-center">
+                <img class="max-w-[60px] max-h-[60px] mb-3 bg-[#FFE3E2] rounded-lg p-3" src="assets/emergency.png" alt="">
+                <span class=" "><i class="fa-regular fa-heart"></i></span>
+            </div>
+            <div class="card-content">
+                <h3 class="font-bold text-[19px]">National Emergency Number</h3>
+                <p class="text-[16px]">National Emergency</p>
+                <span class="font-bold text-2xl">999</span><br>
+                <button class="btn  text-gray-400 rounded-[20px] px-5 py-2 bg-light mb-3"> All</button>
+            </div>
+           <div class="card-btn">
+                <button class="btn text-gray-400 bg-white px-8" tabindex="-1" role="button" aria-disabled="true"><span><i class="fa-regular fa-copy"></i></span>Copy</button>
+                <button class="btn text-white bg-green-600 px-8" tabindex="-1" role="button" aria-disabled="true">
+                  <span class=""><i class="fa-solid fa-phone"></i></span>Call
+                </button>
+            </div>
+      </div>
+    </div>
+</section>
+
 </body>
 </html>
