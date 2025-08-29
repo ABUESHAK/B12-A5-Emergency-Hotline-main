@@ -18,7 +18,6 @@ for (let cardButton of cardBtn) {
     // 👉 Alert showing service title + number
     alert(`Service: ${serviceTitle}\nNumber: ${contactNumber}`);
 
-    // 👉 নতুন সময় add
     const now = new Date();
     const time = now.toLocaleTimeString();
 
@@ -37,14 +36,49 @@ for (let cardButton of cardBtn) {
   });
 }
 
-
+//clear history
 getElement("clear-history").addEventListener("click", function () {
   getElement("call-history-entries").innerHTML = "";
 });
 
+const headerCoin = getElement("coin-count");
+
+
+// Call buttons
+const callButtons = document.getElementsByClassName("call-button");
+for (let button of callButtons) {
+  button.addEventListener("click", function () {
+    let coins = parseInt(headerCoin.innerText);
+    coins -= 20;
+    if (coins < 0) coins = 0;
+    headerCoin.innerText = coins;
+  });
+}
+
+// Heart icons
+const headerHeart = document.getElementById("heart-count");
+const heartIcons = document.getElementsByClassName("card-heart-icon");
+
+for (let heart of heartIcons) {
+  heart.addEventListener("click", function () {
+    headerHeart.innerText = parseInt(headerHeart.innerText) + 1;
+
+    // Fill icon pink color
+    const icon = heart.querySelector("i");
+    icon.classList.remove("fa-regular");
+    icon.classList.add("fa-solid");
+    icon.style.color = "pink";
+    setTimeout(() => {
+      icon.classList.remove("fa-solid");
+      icon.classList.add("fa-regular");
+      icon.style.color = "";
+    }, 1000);
+  });
+}
 
 // copy help line number
 const copyButtons = document.getElementsByClassName("btn");
+const copyCount = getElement("copy-count"); 
 
 for (let button of copyButtons) {
   if (button.innerText.includes("Copy")) {
@@ -53,6 +87,7 @@ for (let button of copyButtons) {
       const number = card.children[1].children[2].innerText.trim();
       navigator.clipboard.writeText(number);
       alert("Number copied: " + number);
+      copyCount.innerText = parseInt(copyCount.innerText) + 1;
     });
   }
 }
